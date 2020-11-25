@@ -1,0 +1,9 @@
+{
+    "query": {
+        "term": {
+            "country": {
+                "value": "mexico"
+            }
+        }
+    }
+}
