@@ -3,16 +3,12 @@ package essparksql.demoapp;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 /**
  * Hello world!
  *
  */
 public class App {
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) {
 
         String querydsl = "{\"query\":{\"term\":{\"country\":{\"value\":\"mexico\"}}}}";
 
