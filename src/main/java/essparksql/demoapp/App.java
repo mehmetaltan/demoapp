@@ -19,7 +19,8 @@ public class App {
         SparkSession sparkSession = SparkSession.builder().master("local[*]").appName("appnametest").getOrCreate();
         Dataset<Row> dfElasticData = sparkSession.read().format("org.elasticsearch.spark.sql")
                 .option("es.nodes", "127.0.0.1").option("es.port", "9200").option("es.resource", "testspark/_doc")
-                .option("es.query", "?q=country:mexico").load();
+                .option("es.query", querydsl) //"?q=country:mexico"
+                .load(); 
         dfElasticData = dfElasticData.groupBy("type").count();
         dfElasticData.show();
     }
