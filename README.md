@@ -1,5 +1,5 @@
 # Elasticsearch'den Spark Sql ile Veri okumak
-  - Projei indirin.
+  - Projeyi indirin.
   - Maven bağımlılıklarını indirin.
   - App.java class'ında bulunan kodları kendi elasticsearch bağlantınıza göre düzenleyin.
   - Projeyi çalıştırın.
